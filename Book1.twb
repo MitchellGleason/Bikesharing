@@ -325,10 +325,17 @@
     </datasource>
   </datasources>
   <worksheets>
-    <worksheet name='Sheet 1'>
+    <worksheet name='Number of Rides'>
       <table>
         <view>
-          <datasources />
+          <datasources>
+            <datasource caption='201908-citibike-tripdata' name='federated.0vj5urj0dt2fuw15cwges0sqdbs8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vj5urj0dt2fuw15cwges0sqdbs8'>
+            <_.fcp.ObjectModelTableType.true...column caption='201908-citibike-tripdata.csv' datatype='table' name='[__tableau_internal_object_id__].[201908-citibike-tripdata.csv_44E3770A35A14CBFAB8F6CCC473F6E36]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[201908-citibike-tripdata.csv_44E3770A35A14CBFAB8F6CCC473F6E36]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:201908-citibike-tripdata.csv_44E3770A35A14CBFAB8F6CCC473F6E36:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='201908-citibike-tripdata.csv' datatype='integer' name='[__tableau_internal_object_id__].[201908-citibike-tripdata.csv_44E3770A35A14CBFAB8F6CCC473F6E36]' role='measure' type='quantitative' />
+          </datasource-dependencies>
           <aggregation value='true' />
         </view>
         <style />
@@ -338,6 +345,21 @@
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0vj5urj0dt2fuw15cwges0sqdbs8].[__tableau_internal_object_id__].[cnt:201908-citibike-tripdata.csv_44E3770A35A14CBFAB8F6CCC473F6E36:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='12'>&lt;</run>
+                <run fontsize='12'>[federated.0vj5urj0dt2fuw15cwges0sqdbs8].[__tableau_internal_object_id__].[cnt:201908-citibike-tripdata.csv_44E3770A35A14CBFAB8F6CCC473F6E36:qk]</run>
+                <run fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
         <rows />
@@ -347,7 +369,7 @@
     </worksheet>
   </worksheets>
   <windows source-height='30'>
-    <window class='worksheet' maximized='true' name='Sheet 1'>
+    <window class='worksheet' maximized='true' name='Number of Rides'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -372,19 +394,31 @@
     </window>
   </windows>
   <thumbnails>
-    <thumbnail height='192' name='Sheet 1' width='192'>
-      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
-      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
-      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
-      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
-      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
-      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
-      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
-      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
-      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
-      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
-      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
-      fBUOM1sAAAAASUVORK5CYII=
+    <thumbnail height='27' name='Number of Rides' width='104'>
+      iVBORw0KGgoAAAANSUhEUgAAAGgAAAAbCAYAAACQqsrOAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEkklEQVRoge2aTUgbaxSG35ZLaVoXIiWg1K0LQUSQWEiLClIUJIFqVEQxC+MP9Adpxb8G
+      VBQUFETdJLoIGDQraTH+YBCS4kIRTNu0hQiKbagSkZrRlGSSzJy7uNxgbpI2Xq2ZxTzL833n
+      fC/zcs58A3ODiAgiguVmsgWI/BrRIIEjGiRwRIMEjmiQwBENEjiiQQJHNEjgiAYJHNEggSMa
+      JHBEgwSOaJDAEQ0SOEkxaHd3F21tbZDL5cjPz0dZWRlMJhN4no+bw/M81tbW0NDQEM6Ty+V4
+      /fo1jo6OYuaEQiH09vYiPz8/bt2DgwM8efIEhYWF+Pjx45Vo53keq6urqKqqgkwmg0wmQ319
+      PRwOR9y609PTkMlk6OzsjFyga+bNmzekVCrp7du35Pf7ieM4+vLlC1VXV5PRaIyb53a7qaen
+      hzY3N8nv9xMR0Y8fP2h4eJg0Gg15vd6onMXFRWppaaHW1taYNVmWJa1WS/39/VRZWUkfPny4
+      tHa/30/d3d2k0Wjo06dPxHEcBQIBmp+fJ4VCQU6nM6qu3W6n+vp60mq11NHREbF27QZtbGzQ
+      yclJVHx5eTlKXCJ4PJ7wwziPy+UitVpNTqczbt3FxUV68eIF7e/vk0ql+q1BiWj/+fMnra+v
+      E8dxEXs4jqP29nayWCwRcYZhqKWlhWw2G+l0uiit1z7iCgoKkJqaGhX3er1ISUm5cL29vT0E
+      g0Gkp6eHY4FAAHq9HiqVCllZWTHzvn37BrPZjFevXkEikVyZ9jt37kAul+PmzchHGwqFEAqF
+      cPv27XCM53nMzc0hLy8PDx8+jHlm0i8JPM/DYrFgfn4earU64Ry3242ZmRmMjIzg5cuXSEtL
+      C6+bzWYAQElJScz8QCCAyclJlJeX4/79+39cu9/vx+joKFJSUiCTycLxra0tOBwO1NTURBka
+      5pc9/YfgOI4sFguVlpaSwWCIGgeJ4PF4yGq1Ul1dHU1MTBDLssQwDD1//py2t7cj9p4fG3a7
+      nZ49e0YMw4Rjbrc7oRF3Ee0+n4+Gh4dJqVTS+/fvI9ZYlqW+vj5aWFiIiMcacTeIrv+nkaWl
+      JZhMJgwODiIzM/NStU5PT9HR0YHGxkYwDIPOzs64t8GhoSFYrVasrKzErSeVSmEwGCCVSv+3
+      9kAggIGBAUgkErS1tUWMNQD4/Pkznj59irOzs7g6mpqa0NTUdP0d5HQ6Sa1Wk8vlupJ68V6+
+      5/nd5SPRDkpUu9FoJK1WSyzL/nLffxHEJcFsNqO4uPi3s99ms0GhUIS/cdbX1zEwMICdnR0E
+      g0EA/3SPTqfD/v4+srOzr1Snz+dDc3Mz9Hr9hbQzDIN3796htrYWt27durSOvy5d4YIcHR1h
+      dnYW4+PjUWs5OTmYnJyERCKBzWbDgwcPcO/ePQBAbm4unE4nurq64HK5wPM87t69i0ePHmFs
+      bAwZGRlXqvPr1684Pj5GUVHRhbSzLAuXy4W6urqYdcOjK1Eu1IPXxOHhIbW2ttL379+TpkGv
+      19PU1FTSzv+XpF+zY7G1tYXHjx9feVckyunpKQ4PD1FRUZGU88/zN9qay8uE110JAAAAAElF
+      TkSuQmCC
     </thumbnail>
   </thumbnails>
 </workbook>
