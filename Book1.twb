@@ -762,8 +762,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='17' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='21' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
                 <zone h='3750' id='3' type-v2='text' w='24500' x='700' y='1000'>
                   <formatted-text>
                     <run fontsize='16'>NYC Citi Bike Dashboard</run>
@@ -890,6 +890,32 @@
         </devicelayout>
       </devicelayouts>
       <simple-id uuid='{38F6DD00-9699-4ED5-B070-E1B45AAF52AA}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{778A9F5B-09CA-46E7-B082-8A7C13E18C9F}' />
     </dashboard>
   </dashboards>
   <windows source-height='30'>
@@ -1167,7 +1193,7 @@
       </cards>
       <simple-id uuid='{40C52254-B788-4BCD-8B70-219DC0F1B128}' />
     </window>
-    <window class='dashboard' maximized='true' name='NYC Citi Bike'>
+    <window class='dashboard' name='NYC Citi Bike'>
       <viewpoints>
         <viewpoint name='Average Trip Duration'>
           <zoom type='entire-view' />
@@ -1196,6 +1222,11 @@
       </viewpoints>
       <active id='-1' />
       <simple-id uuid='{5B9F9D62-50D5-4672-8DEF-86FD5558F0B6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{3AB7148C-70DC-496B-912C-CE0E956C2049}' />
     </window>
   </windows>
   <thumbnails>
