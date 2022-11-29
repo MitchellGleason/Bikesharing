@@ -762,8 +762,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='21' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='23' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
                 <zone h='3750' id='3' type-v2='text' w='24500' x='700' y='1000'>
                   <formatted-text>
                     <run fontsize='16'>NYC Citi Bike Dashboard</run>
