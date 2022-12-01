@@ -3,6 +3,8 @@
 ## Overview
 The purpose of this project is to analyze and visualize data from CitiBike in New York City in order to help convince investors that a bike-sharing program in a new city is a solid business proposal. The data used in this project is from August 2019, and is visualized using Tableau.
 
+Tableau Public link: https://public.tableau.com/views/Bikesharing_16698235670220/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
 ## Results
 ### How long do customers use the bikes for?
 
